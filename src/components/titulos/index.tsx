@@ -45,7 +45,8 @@ function Titulo ({imagem, children} : Props){
     return (
         <ContainerEstilizado>
         {imagem &&  <SpanEstilizado imagem={listaDeImagens[imagem as keyof IImagens]} /*o código antes da abertura da tag do span é para caso o spanEstilizado não recebe nenhuma imagem ele não irá oculpar nenhum espaço na nossa view  *//>} 
-                <TituloEstilizado>{children}</TituloEstilizado>
+                    <TituloEstilizado>{children}</TituloEstilizado> {/* O children vai ser o texto em que passaremos como parâmetro lá no app.tsx para  essa função 'Titulo'. Lembrando que essa função é tipada pelo Props e que no props colocamos como 
+                esses parâmetros sendo opcionais  */}
         </ContainerEstilizado>
     )
 }

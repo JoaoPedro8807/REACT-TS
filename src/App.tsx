@@ -8,7 +8,7 @@ function App() {
     <> 
    <Cabecalho/>
    <Container>
-    <Titulo>Área administrativa</Titulo>
+    <Titulo>Àrea administrativa</Titulo>
    </Container>
     
     
